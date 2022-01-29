@@ -11,7 +11,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
     <BaseModal title="Án-chóaⁿ sńg" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
         Pe̍h-ōe-jī pheng-jī ē-tàng ioh 6-pái. Ta̍k-pái ioh liáu, ta̍k-lia̍p jī-bó
-        lóng ē hián-sī sek-chúi, piáu-sī lí ioh--ê kap tah-àn cheng-chha gōa
+        lóng ē hián-sī sek-chúi, piáu-sī lí ioh--ê kap tap-àn cheng-chha gōa
         chē.
       </p>
 
@@ -32,7 +32,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="2" />
       </div>
       <p className="text-sm text-gray-500">
-        "G"--jī ū chhut-hiān tī tah-àn lāi-té, só͘-chāi mā chèng-khak.
+        "G"--jī ū chhut-hiān tī tap-àn lāi-té, só͘-chāi mā chèng-khak.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -43,7 +43,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="G" />
       </div>
       <p className="text-sm text-gray-500">
-        "A"--jī ū chhut-hiān tī tah-àn lāi-té, m̄-koh ūi-tì m̄ tio̍h, tī pa̍t ūi.
+        "A"--jī ū chhut-hiān tī tap-àn lāi-té, m̄-koh ūi-tì m̄ tio̍h, tī pa̍t ūi.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -54,7 +54,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500">
-        "O"--jī BÔ chhut-hiān tī tah-àn lāi-té.
+        "O"--jī BÔ chhut-hiān tī tap-àn lāi-té.
       </p>
     </BaseModal>
   )

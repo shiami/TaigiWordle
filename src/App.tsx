@@ -162,7 +162,7 @@ function App() {
 
       <Alert message="Jī-bó bô kàu" isOpen={isNotEnoughLetters} />
       <Alert message="Bô chit-ê sû" isOpen={isWordNotFoundAlertOpen} />
-      <Alert message={`Tah-àn sī ${solution}`} isOpen={isGameLost} />
+      <Alert message={`Tap-àn sī ${solution}`} isOpen={isGameLost} />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}

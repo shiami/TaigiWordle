@@ -20,7 +20,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         </a>
       </p>
       <p className="text-sm text-gray-500 py-3">
-        This is inspired from an open source clone of the game Wordle -{' '}
+        This is modified from an open source clone of the game Wordle -{' '}
         <a
           href="https://github.com/hannahcode/wordle"
           className="underline font-bold"
