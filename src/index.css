@@ -1,5 +1,12 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'TaigiFont';
+  src: local('TaigiFont'),
+    url(./assets/fonts/Iansui0.92-Regular.woff2) format('woff2');
+}
+
 @tailwind utilities;
 
 .cell-animation {

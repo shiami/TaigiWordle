@@ -4,6 +4,6 @@ import App from './App'
 
 test('renders App component', () => {
   render(<App />)
-  const linkElement = screen.getByText(/Not Wordle/)
+  const linkElement = screen.getByText(/Tàu Tâi-gí (Taigi Wordle)/)
   expect(linkElement).toBeInTheDocument()
 })

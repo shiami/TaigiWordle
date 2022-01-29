@@ -27,22 +27,36 @@ export const StatsModal = ({
 }: Props) => {
   if (gameStats.totalGames <= 0) {
     return (
-      <BaseModal title="Statistics" isOpen={isOpen} handleClose={handleClose}>
+      <BaseModal title="Kiat-kó" isOpen={isOpen} handleClose={handleClose}>
         <StatBar gameStats={gameStats} />
       </BaseModal>
     )
   }
   return (
-    <BaseModal title="Statistics" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Kiat-kó" isOpen={isOpen} handleClose={handleClose}>
       <StatBar gameStats={gameStats} />
       <h4 className="text-lg leading-6 font-medium text-gray-900">
-        Guess Distribution
+        Ioh liáu án-chóaⁿ
       </h4>
       <Histogram gameStats={gameStats} />
+      <h4 className="text-lg leading-6 font-medium text-gray-900 py-4">
+        Chàn-chō͘ chi-chhî
+      </h4>
+      <p className="text-md text-gray-500">
+        Nā kám-kak bē-bái sńg, pài-thok chhiáⁿ lâi kā gún kià-hù:{' '}
+        <a
+          href="https://www.zeczec.com/projects/taibun-kesimi"
+          className="underline font-bold"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Tâi-bûn Ke-si-mī
+        </a>
+      </p>
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2">
           <div>
-            <h5>New word in</h5>
+            <h5>Āu chi̍t tiâu</h5>
             <Countdown
               className="text-lg font-medium text-gray-900"
               date={tomorrow}
@@ -57,7 +71,7 @@ export const StatsModal = ({
               handleShare()
             }}
           >
-            Share
+            Hun-hióng
           </button>
         </div>
       )}
