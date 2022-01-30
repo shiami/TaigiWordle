@@ -9,7 +9,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Liáu-kái" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-md text-gray-500 dark:text-gray-300">
-        Nā kám-kak bē-bái sńg, pài-thok chhiáⁿ lâi kā gún kià-hù:{' '}
+        Nā kám-kak bē-bái sńg, chhiáⁿ lâi kā gún kià-hù chi-chhî:{' '}
         <a
           href="https://www.zeczec.com/projects/taibun-kesimi"
           className="underline font-bold"
