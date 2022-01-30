@@ -5,6 +5,12 @@ import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
 import { solution, tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
+import {
+  STATISTICS_TITLE,
+  GUESS_DISTRIBUTION_TEXT,
+  NEW_WORD_TEXT,
+  SHARE_TEXT,
+} from '../../constants/strings'
 
 type Props = {
   isOpen: boolean
@@ -27,38 +33,32 @@ export const StatsModal = ({
 }: Props) => {
   if (gameStats.totalGames <= 0) {
     return (
-      <BaseModal title="Kiat-kó" isOpen={isOpen} handleClose={handleClose}>
+      <BaseModal
+        title={STATISTICS_TITLE}
+        isOpen={isOpen}
+        handleClose={handleClose}
+      >
         <StatBar gameStats={gameStats} />
       </BaseModal>
     )
   }
   return (
-    <BaseModal title="Kiat-kó" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal
+      title={STATISTICS_TITLE}
+      isOpen={isOpen}
+      handleClose={handleClose}
+    >
       <StatBar gameStats={gameStats} />
-      <h4 className="text-lg leading-6 font-medium text-gray-900">
-        Ioh liáu án-chóaⁿ
+      <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
+        {GUESS_DISTRIBUTION_TEXT}
       </h4>
       <Histogram gameStats={gameStats} />
-      <h4 className="text-lg leading-6 font-medium text-gray-900 py-4">
-        Chàn-chō͘ chi-chhî
-      </h4>
-      <p className="text-md text-gray-500">
-        Nā kám-kak bē-bái sńg, pài-thok chhiáⁿ lâi kā gún kià-hù:{' '}
-        <a
-          href="https://www.zeczec.com/projects/taibun-kesimi"
-          className="underline font-bold"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Tâi-bûn Ke-si-mī
-        </a>
-      </p>
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-1">
-          <h4 className="text-lg leading-4 font-medium text-gray-900 py-4">
+          <h4 className="text-lg leading-4 font-medium text-gray-900 dark:text-gray-100 py-4">
             ChhoeTaigi chhōe tap-àn
           </h4>
-          <p className="text-md text-gray-500">
+          <p className="text-md text-gray-500 dark:text-gray-400">
             <a
               href={`https://chhoe.taigi.info/search?method=basic&searchMethod=equals&spellingMethod=PojInput&spelling=${solution}`}
               className="underline font-bold"
@@ -68,11 +68,22 @@ export const StatsModal = ({
               ChhoeTaigi: {`${solution}`}
             </a>
           </p>
-          <div className="mt-5 sm:mt-6 columns-2 py-2">
+          <p className="text-md text-gray-500 dark:text-gray-400 py-4">
+            Nā kám-kak bē-bái sńg, chhiáⁿ lâi kā gún kià-hù chi-chhî:{' '}
+            <a
+              href="https://www.zeczec.com/projects/taibun-kesimi"
+              className="underline font-bold"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Tâi-bûn Ke-si-mī
+            </a>
+          </p>
+          <div className="mt-5 sm:mt-6 columns-2 dark:text-white py-2">
             <div>
-              <h5>Āu chi̍t tiâu</h5>
+              <h5>{NEW_WORD_TEXT}</h5>
               <Countdown
-                className="text-lg font-medium text-gray-900"
+                className="text-lg font-medium text-gray-900 dark:text-gray-100"
                 date={tomorrow}
                 daysInHours={true}
               />
@@ -85,7 +96,7 @@ export const StatsModal = ({
                 handleShare()
               }}
             >
-              Hun-hióng
+              {SHARE_TEXT}
             </button>
           </div>
         </div>

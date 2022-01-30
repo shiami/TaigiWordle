@@ -9,17 +9,17 @@ type Props = {
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Án-chóaⁿ sńg" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-300">
         Pe̍h-ōe-jī pheng-jī ē-tàng ioh 6-pái. Ta̍k-pái ioh liáu, ta̍k-lia̍p jī-bó
         lóng ē hián-sī sek-chúi, piáu-sī lí ioh--ê kap tap-àn cheng-chha gōa
         chē.
       </p>
 
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-300">
         ------------------------------------------------------------------
       </p>
 
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-300">
         (Pe̍h-ōe-jī Su-ji̍p-sek: siaⁿ-tiāu phah sò͘-jī. Nā tē-1 tiāu kap tē-4 tiāu
         m̄ bián phah sò͘-jī. "O͘" phah "OO", "ⁿ" phah "NN".)
       </p>
@@ -31,7 +31,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="N" />
         <Cell value="2" />
       </div>
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-300">
         "G"--jī ū chhut-hiān tī tap-àn lāi-té, só͘-chāi mā chèng-khak.
       </p>
 
@@ -42,7 +42,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="N" />
         <Cell value="G" />
       </div>
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-300">
         "A"--jī ū chhut-hiān tī tap-àn lāi-té, m̄-koh ūi-tì m̄ tio̍h, tī pa̍t ūi.
       </p>
 
@@ -53,7 +53,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="O" status="absent" />
         <Cell value="E" />
       </div>
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-300">
         "O"--jī BÔ chhut-hiān tī tap-àn lāi-té.
       </p>
     </BaseModal>

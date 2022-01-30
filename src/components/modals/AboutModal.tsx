@@ -8,7 +8,7 @@ type Props = {
 export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Liáu-kái" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-md text-gray-500">
+      <p className="text-md text-gray-500 dark:text-gray-300">
         Nā kám-kak bē-bái sńg, pài-thok chhiáⁿ lâi kā gún kià-hù:{' '}
         <a
           href="https://www.zeczec.com/projects/taibun-kesimi"
@@ -19,7 +19,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
           Tâi-bûn Ke-si-mī
         </a>
       </p>
-      <p className="text-sm text-gray-500 py-3">
+      <p className="text-sm text-gray-500 dark:text-gray-300 py-3">
         This is modified from an open source clone of the game Wordle -{' '}
         <a
           href="https://github.com/hannahcode/wordle"
